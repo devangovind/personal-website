@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
+html {
+  width: 100%;
+}
 body {
   background: radial-gradient(
     circle,
@@ -10,6 +13,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .blur-screen {
@@ -40,7 +44,7 @@ headingsection {
   z-index: 9;
 
   text-align: center;
-  height: 4rem;
+  height: 6vw;
   max-height: 4rem;
   /* display: flex;
     justify-content: space-around;
@@ -51,6 +55,7 @@ headingsection {
      */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.272);
   background-color: rgb(26, 35, 41);
+  overflow-y: auto;
 
   /* justify-content: center; */
 }
@@ -64,12 +69,12 @@ headingsection {
   place-items: center;
   float: center;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 24px;
   color: #ffffff;
-  margin-top: 0;
-  max-height: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  font-size: 1.8vw;
+
+  align-self: baseline;
+  padding: 1vw;
   text-decoration: none;
   border: 0.01rem solid rgba(238, 255, 255, 0.049);
   /* max-width: 5rem; */
@@ -86,9 +91,12 @@ headingsection {
   border: solid;
   border-color: rgb(255, 255, 255);
   border-radius: 0.3rem;
-  font-size: 28px;
-  padding-top: 0.7rem;
-  margin-bottom: 1rem;
+  font-size: 2vw;
+
+  align-self: baseline;
+  padding: 1vw;
+  text-decoration: none;
+
   opacity: 1;
   -webkit-box-shadow: inset 0 0 300px rgb(255, 255, 255);
   -moz-box-shadow: inset 0 0 10px rgb(255, 255, 255);
@@ -108,12 +116,13 @@ headingsection {
   border-color: rgb(255, 255, 255);
   border-radius: 0.3rem;
   text-shadow: 0 0 3px rgb(255, 255, 255);
-  font-size: 28px;
-  padding-top: 0.7rem;
-  text-decoration: none;
-  padding-bottom: 0.4rem;
 
-  margin-bottom: 1rem;
+  text-decoration: none;
+  font-size: 2vw;
+
+  align-self: baseline;
+  padding: 1vw;
+
   opacity: 1;
   -webkit-box-shadow: inset 0 0 300px rgb(255, 255, 255);
   -moz-box-shadow: inset 0 0 10px rgb(255, 255, 255);
@@ -135,7 +144,7 @@ p {
 pagetitle {
   display: flex;
   justify-content: space-around;
-  font-size: 3rem;
+  font-size: 6vw;
   padding: 3rem;
   padding-bottom: 4rem;
   font-weight: bold;
@@ -146,21 +155,31 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  margin-bottom: 8rem;
+  margin-bottom: 5vw;
 }
 section h1 {
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 3vw;
+  padding: 2vw;
   margin: 0;
 }
 section p {
   padding: 0;
   margin: 0;
+  font-size: 2vw;
+}
+
+section ul {
+  margin: 0;
+  width: 90%;
+  justify-content: space-around;
+  padding: 0;
 }
 
 section li {
-  width: 50rem;
   text-align: center;
+  font-size: 1.5vw;
+  margin: 0;
+  margin-right: 0;
 }
 
 .hidden {
@@ -330,4 +349,35 @@ canvas {
   );
   height: 100%;
   min-height: 100%;
+  font-size: 1vw;
+  background-repeat: repeat-y;
+}
+
+@media screen and (min-width: 1200px) {
+  .topnav a:not(.active) {
+    font-size: 24px;
+  }
+  .topnav a:hover {
+    font-size: 28px;
+    padding: 8px;
+  }
+  .active {
+    font-size: 28px;
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  pagetitle {
+    font-size: 60px;
+  }
+  section h1 {
+    font-size: 40px;
+  }
+  section p {
+    font-size: 25px;
+  }
+  section li {
+    font-size: 15px;
+  }
 }
