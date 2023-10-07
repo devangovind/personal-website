@@ -10,7 +10,7 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddentElements = document.querySelectorAll(".hidden");
 hiddentElements.forEach((element, i) => {
-  element.style.transitionDelay = i * 200 + "ms";
+  element.style.transitionDelay = i * 300 + "ms";
   observer.observe(element);
 });
 
