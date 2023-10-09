@@ -45,8 +45,8 @@ headingsection {
   z-index: 9;
 
   text-align: center;
-  height: 6vw;
-  max-height: 4rem;
+  height: 5.8vw;
+  max-height: 70px;
   /* display: flex;
     justify-content: space-around;
     background-color: rgba(238, 255, 255, 0.049);
@@ -78,6 +78,7 @@ headingsection {
   padding: 1vw;
   text-decoration: none;
   border: 0.01rem solid rgba(238, 255, 255, 0.049);
+  border: hidden;
   /* max-width: 5rem; */
   /* background-color: rgba(238, 255, 255, 0.917); */
 }
