@@ -46,7 +46,8 @@ headingsection {
 
   text-align: center;
   height: 5.8vw;
-  max-height: 70px;
+  max-height: 66px;
+
   /* display: flex;
     justify-content: space-around;
     background-color: rgba(238, 255, 255, 0.049);
@@ -357,13 +358,21 @@ canvas {
   background-repeat: repeat;
 }
 
+.home-page {
+  overscroll-behavior: none;
+
+  background-repeat: repeat;
+}
+
 @media screen and (min-width: 1200px) {
   .topnav a:not(.active) {
     font-size: 24px;
+    margin-top: 0;
   }
   .topnav a:hover {
     font-size: 28px;
     padding: 8px;
+    margin-top: 0;
   }
   .active {
     font-size: 28px;
