@@ -368,6 +368,7 @@ canvas {
   .topnav a:not(.active) {
     font-size: 24px;
     margin-top: 0;
+    padding: 0;
   }
   .topnav a:hover {
     font-size: 28px;
@@ -377,6 +378,11 @@ canvas {
   .active {
     font-size: 28px;
     padding: 8px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .topnav {
+    height: 70px;
   }
 }
 
